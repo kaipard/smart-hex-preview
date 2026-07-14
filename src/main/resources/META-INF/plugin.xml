@@ -1,0 +1,34 @@
+<idea-plugin>
+    <id>smarthex.preview</id>
+    <name>Smart Hex Preview</name>
+    <vendor email="smarthex@example.com" url="https://example.com">SmartHex</vendor>
+    <idea-version since-build="221"/>
+
+    <description><![CDATA[
+        <h3>Smart Hex Preview</h3>
+        Automatically recognizes 6-digit hex color codes (<code>#XXXXXX</code>) wrapped in
+        <code>[]</code>, <code>()</code>, single quotes or double quotes, and renders them inline
+        as colored blocks with a clickable gutter indicator. Click a gutter block to open a color
+        picker and replace the hex value in place (wrappers are preserved).
+        <br/><br/>
+        Custom regex patterns can be added in <b>Settings | Tools | Smart Hex Preview</b>.
+    ]]></description>
+
+    <change-notes><![CDATA[
+        <b>1.0.0</b> Initial release.
+    ]]></change-notes>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <applicationService serviceImplementation="smarthex.HexPatternConfig"/>
+        <projectService serviceImplementation="smarthex.HexHighlightingService"/>
+
+        <postStartupActivity implementation="smarthex.HexStartupActivity"/>
+
+        <applicationConfigurable parentId="tools"
+                                 id="smarthex.settings"
+                                 instance="smarthex.SettingsPanel"
+                                 displayName="Smart Hex Preview"/>
+    </extensions>
+</idea-plugin>
