@@ -41,7 +41,7 @@
 
 ### English
 
-1. Download the latest release `.zip` from [Releases](https://github.com/your-username/smart-hex-preview/releases) (or build it yourself — see below)
+1. Download the latest release `.zip` from [Releases](https://github.com/kaipard/smart-hex-preview/releases) (or build it yourself — see below)
 2. Open **PyCharm / IntelliJ IDEA**
 3. Go to `File | Settings | Plugins`
 4. Click the gear icon ⚙ → **Install Plugin from Disk...**
@@ -50,7 +50,7 @@
 
 ### 中文
 
-1. 从 [Releases](https://github.com/your-username/smart-hex-preview/releases) 下载最新版 `.zip`（或自行构建，参见下方）
+1. 从 [Releases](https://github.com/kaipard/smart-hex-preview/releases) 下载最新版 `.zip`（或自行构建，参见下方）
 2. 打开 **PyCharm / IntelliJ IDEA**
 3. 进入 `File | Settings | Plugins`
 4. 点击齿轮图标 ⚙ → **Install Plugin from Disk...**
@@ -133,7 +133,7 @@ ink       = "#111827"
 
 ```bash
 # Clone / 克隆
-git clone https://github.com/your-username/smart-hex-preview.git
+git clone https://github.com/kaipard/smart-hex-preview.git
 cd smart-hex-preview
 
 # Build / 构建
